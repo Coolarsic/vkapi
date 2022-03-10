@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Vk.vom Statistics</h1>
+    <span class="act"><h2 align="center">Activities</h2></span>
+    <table align="center" width="90%">
+        {% for i in activities.keys() %}
+          <tr>
+                <td bgcolor="#CC00CC" height="50px">{{ i }}</td>
+                <td bgcolor="#990099">{{ activities[i] }}</td>
+          </tr>
+        {% endfor %}
+    </table>
+    <span class="age"><h2 align="center">Ages</h2></span>
+    <table align="center" width="90%">
+        {% for i in ages.keys() %}
+          <tr>
+                <td bgcolor="#00AAAA" height="50px">{{ i }}</td>
+                <td bgcolor="#006666">{{ ages[i] }}</td>
+          </tr>
+        {% endfor %}
+    </table>
+    <span class="city"><h2 align="center">Cities</h2></span>
+    <table align="center" width="90%">
+        {% for i in cities %}
+          <tr>
+                <td bgcolor="#AAAA00" height="50px">{{ i }}</td>
+          </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

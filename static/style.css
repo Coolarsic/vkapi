@@ -1,0 +1,16 @@
+.act {
+    color: #990099;
+    font-size: 200%;
+}
+.age {
+    color: #00DDDD;
+    font-size: 200%;
+}
+.city {
+    color: #DDDD00;
+    font-size: 200%;
+}
+td{
+    font-size: 150%;
+    padding-left: 15px;
+}
